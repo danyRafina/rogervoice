@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RogerVoice</string>
+    <string name="categContact">CONTACTS</string>
+
+    <string name="welcome">Bienvenue sur RogerVoice</string>
+    <string name="action_contact">Contacts</string>
+    <string name="title">Title</string>
+</resources>
