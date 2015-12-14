@@ -1,6 +1,5 @@
 package com.scc2.rogervoice;
 
-import android.content.Intent;
 import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -60,9 +59,7 @@ public class PhoneCall extends AppCompatActivity {
             telephonyObject = serviceMethod.invoke(null, retbinder);
             telephonyEndCall = telephonyClass.getMethod("endCall");
             telephonyEndCall.invoke(telephonyObject);
-            Intent dialogIntent = new Intent(PhoneCall.this, MainActivity.class);
-            dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(dialogIntent);
+            finish();
 
         } catch (Exception e) {
             e.printStackTrace();

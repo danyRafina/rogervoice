@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/rafina/AndroidStudioProjects/RogerVoice/app/build/intermediates/incremental-classes/debug/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0bc1a518bfaace2c307bd55a7bdab58d6f9904e8">
+        <dex dex="/home/rafina/AndroidStudioProjects/RogerVoice/app/build/intermediates/pre-dexed/debug/classes_7c2388ea43b85d73c3647a746fd5c2a9009f1d96.jar" />
+    </item>
+
+</items>

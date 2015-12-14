@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.scc2.rogervoice">
-
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <service android:name=".AutoStartUp" android:exported="true">
+            <intent-filter>
+                <action android:name="com.ssc2.rogervoice.AutoStartup" />
+            </intent-filter>
+        </service>
         <receiver
             android:name=".BootComplete"
             android:enabled="true"
@@ -17,9 +21,6 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
-        <service android:name=".AutoStartUp" >
-        </service>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -50,6 +51,5 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
 </manifest>

@@ -20,7 +20,6 @@ public class AutoStartUp extends Service {
         super.onCreate();
         Toast.makeText(this, "Service Started", Toast.LENGTH_LONG).show();
         // do something when the service is created
-
         TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         // register PhoneStateListener
         PhoneStateListener callStateListener = new PhoneStateListener() {
@@ -43,6 +42,4 @@ public class AutoStartUp extends Service {
 
 
     }
-
-
 }
